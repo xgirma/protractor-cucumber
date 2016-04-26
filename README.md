@@ -1,11 +1,17 @@
 # Protractor-Cucumber
-BDD Protractor test using Cucumber.
+Protractor BDD styled test using Cucumber.
 
-## Installation 
+## Dependencies  
 
     > npm i -S -D protractor
     > npm i -S -D cucumber
     > npm i -S -D protractor-cucumber-framework
-    > npm i -S -D grunt
+    > npm i -S -D chai
     > npm i -S -D chai-as-promised
+    > npm i -S -D grunt
+    > npm i -S -D grunt-protractor-runner
 
+## Troubleshooting 
+
+    - install Nodejs
+    - install Chrome in the default location
