@@ -2,9 +2,8 @@
   "name": "protractor-cucumber",
   "version": "0.0.1",
   "description": "BDD Protractor test using Cucumber",
-  "main": "config.js",
   "scripts": {
-    "test": "protractor config.js"
+    "test": "protractor ./config/protractorConfig.js"
   },
   "repository": {
     "type": "git",
