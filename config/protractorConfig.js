@@ -5,7 +5,7 @@ exports.config = {
 
     // What tests to run
   , specs             : [
-      'spec/*.feature.js'
+      './../features/*.feature'
   ]
   , capabilities      : env.capabilities
 
