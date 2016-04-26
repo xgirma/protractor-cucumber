@@ -1,3 +1,5 @@
+var env = require('./environment');
+
 exports.config = {
     directConnect     : true
 
@@ -5,9 +7,7 @@ exports.config = {
   , specs             : [
       'spec/*.feature.js'
   ]
-  , capabilities      : {
-      browserName : 'chrome'
-  }
+  , capabilities      : env.capabilities
 
     // Global test information
   , baseUrl           : 'http://secpod.herokuapp.com'
