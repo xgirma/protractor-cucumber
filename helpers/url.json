@@ -1,0 +1,5 @@
+{
+  "home"    : "http://secpod.herokuapp.com/",
+  "list"    : "http://secpod.herokuapp.com/list",
+  "invalid" : "http://secpod.herokuapp.com/listal"
+}

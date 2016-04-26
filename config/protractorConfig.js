@@ -12,8 +12,11 @@ exports.config = {
     // Global test information
   , baseUrl           : 'http://secpod.herokuapp.com'
   , rootElement       : 'body'
-  , allScriptsTimeout : 11000
-  , getPageTimeout    : 10000
+  , allScriptsTimeout : 30000
+  , getPageTimeout    : 30000
+  , onPrepare: function() {
+    browser.ignoreSynchronization = true;
+  }
 
     // The test framework
   , framework         : 'custom'
@@ -26,8 +29,8 @@ exports.config = {
       // Only execute the features or scenarios with tags matching @demo.
       // This may be an array of strings to specify multiple tags to include.
     , tags        : '@demo'
-      // How to format features (default: progress)
-      // Other options include `coffee`, `noSnippets`, and `dryRun`
-    , format      : 'summary'
+      // How to format features (default: progress )
+      // Other options include 'summary', `coffee`, `noSnippets`, and `dryRun`
+    , format      : 'pretty'
   }
 };

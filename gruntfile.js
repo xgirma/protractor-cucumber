@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       pkg: grunt.file.readJSON('package.json')
     , protractor: {
       options: {
-          keepAlive: true
+          keepAlive: false
         , configFile: './config/protractorConfig.js'
       }
       , run: {}
