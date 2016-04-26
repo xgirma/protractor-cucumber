@@ -12,8 +12,6 @@ chai.use(chaiAsPromised);
 module.exports = function () {
   this.Given(/^I open Secpood$/, function (next) {
     browser.get(browser.baseUrl);
-    // free herukuapp loads slow :)
-    browser.sleep(10000);
     next();
   });
 
@@ -29,7 +27,6 @@ module.exports = function () {
 
   this.Given(/^Clicked List All on the Header menu$/, function (next) {
     navBar.navToList();
-    browser.sleep(10000);
     next();
   });
 
@@ -45,7 +42,6 @@ module.exports = function () {
 
   this.Given(/^Clicked Security Podcast Directory on the Header menu$/, function (next) {
     navBar.navToHome();
-    browser.sleep(10000);
     next();
   });
 
@@ -56,7 +52,6 @@ module.exports = function () {
 
   this.Given(/^Entered invalid path in the address\-bar$/, function (next) {
     browser.get(url.invalid);
-    browser.sleep(10000);
     next();
   });
 
