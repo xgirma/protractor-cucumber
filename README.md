@@ -18,6 +18,8 @@ Protractor BDD styled test using Cucumber.
 ## Troubleshooting 
 
     - install Nodejs
+    - install Grunt globaly (require admin)
+        > npm install -g
     - install Chrome in the default location
     - 'Error: Could not find chromedriver at ...' run
         > ./node_modules/protractor/bin/webdriver-manager update
